@@ -94,3 +94,7 @@ const page = async ({ params }) => {
 };
 
 export default page;
+
+// git remote add origin https://github.com/amd142457/keen-keeper.git
+// git branch -M main
+// git push -u origin main
