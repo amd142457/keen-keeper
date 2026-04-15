@@ -1,9 +1,11 @@
 import Ui from "@/componants/Home/Ui";
 
-export default function Home() {
+const PageDetails = () => {
   return (
     <div>
       <Ui />
     </div>
   );
-}
+};
+
+export default PageDetails;
