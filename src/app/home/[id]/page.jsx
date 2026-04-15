@@ -1,12 +1,11 @@
 import TimelineButtons from "@/componants/TimelineButtons";
+import myData from "@/data/data.json";
 import Image from "next/image";
 
 const page = async ({ params }) => {
   const resolvedParams = await params;
-  const res = await fetch("http://localhost:3000/Data.json");
-  const data = await res.json();
 
-  const item = data.find((i) => String(i.id) === String(resolvedParams.id));
+  const item = myData.find((i) => String(i.id) === String(resolvedParams.id));
 
   return (
     <div>
@@ -97,4 +96,4 @@ export default page;
 
 // git remote add origin https://github.com/amd142457/keen-keeper.git
 // git branch -M main
-// git push -u origin main
+// n

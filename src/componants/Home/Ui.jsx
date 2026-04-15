@@ -1,11 +1,9 @@
 import React from "react";
 import Image from "next/image";
 import Link from "next/link";
+import myData from "../../data/data.json";
 
 const Ui = async () => {
-  const res = await fetch("http://localhost:3000/Data.json");
-  const data = await res.json();
-
   return (
     <div>
       <div>
@@ -47,7 +45,7 @@ const Ui = async () => {
       </div>
 
       <div className=" card-in card grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-3 w-10/12 mx-auto ">
-        {data.map((item) => (
+        {myData.map((item) => (
           <div key={item.id}>
             <Link href={`/home/${item.id}`}>
               <div className="card bg-[#FFFFFF] border border-[#BA8F33]  shadow-sm p-7  h-full">
