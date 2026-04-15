@@ -9,7 +9,7 @@ const Navbar = () => {
 
   return (
     <div>
-      <div className="max-lg:collapse bg-[#1C1C1A] shadow-sm w-full rounded-md transition-all duration-500">
+      <div className="max-lg:collapse bg-[#1C1C1A] shadow-sm w-full  transition-all duration-500">
         <input id="navbar-1-toggle" className="peer hidden" type="checkbox" />
         <label
           htmlFor="navbar-1-toggle"
