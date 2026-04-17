@@ -1,36 +1,97 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# 📊 Friendship Tracker Dashboard
 
-## Getting Started
+A modern web application to track interactions (Call, Text, Video) with people and visualize them using a timeline and analytics dashboard.
 
-First, run the development server:
+---
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+## 🚀 Features
+
+- 📌 Add interactions (Call, Text, Video)
+- 🕒 Timeline view of all activities
+- 📊 Pie chart analytics (Recharts)
+- 🔍 Filter interactions by type
+- 📱 Responsive design (Mobile + Desktop)
+- 🔔 Toast notifications
+
+---
+
+## 🛠️ Technologies Used
+
+- Next.js (App Router)
+- React Context API
+- Tailwind CSS
+- Recharts (for charts)
+- React Toastify
+
+---
+
+## 📁 Folder Structure
+
+```
+src/
+ ├── app/
+ │    ├── timeline/
+ │    ├── status/
+ │    └── [id]/
+ │
+ ├── components/
+ │    ├── TimelineButtons.jsx
+ │    ├── InteractionChart.jsx
+ │
+ ├── context/
+ │    └── TimelineContext.js
+ │
+ ├── data/
+ │    └── data.json
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+---
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+## ⚙️ Installation
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+```bash
+git clone https://github.com/your-username/your-repo-name.git
+cd your-repo-name
+npm install
+npm run dev
+```
 
-## Learn More
+---
 
-To learn more about Next.js, take a look at the following resources:
+## 📊 How It Works
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+1. User clicks on Call/Text/Video button
+2. Data is stored in Context API
+3. Timeline page shows all interactions
+4. Status page visualizes data using Pie Chart
+5. Filter allows viewing specific interaction types
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+---
 
-## Deploy on Vercel
+## 🧠 Learning Highlights
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+- Context API for global state management
+- Dynamic routing in Next.js
+- Data filtering and transformation
+- Chart visualization using Recharts
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+---
+
+## 📌 Future Improvements
+
+- 💾 Save data in localStorage / database
+- 📅 Date-wise filtering
+- 📈 More analytics (weekly/monthly)
+- 🌙 Dark mode support
+
+---
+
+## 🙌 Author
+
+**Your Name**
+
+md akram
+
+## ⭐ Give a Star
+
+If you like this project, please give it a ⭐ on GitHub!
